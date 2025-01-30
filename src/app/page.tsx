@@ -103,7 +103,7 @@ export default function Home() {
             </Box>
           </Grid2>
           <Grid2 container size={{ xs: 12, sm: 6 }} direction={'column'} spacing={2}>
-            <Grid2 sx={{ alignSelf: 'flex-center', textAlign: 'right' }}>
+            <Grid2 sx={{ alignSelf: 'flex-center', textAlign: 'center' }}>
               <Image src="/Scanning.png" alt="QR Code" layout="intrinsic" width={500}
                 height={300} objectFit="contain" />
             </Grid2>
@@ -136,7 +136,7 @@ export default function Home() {
                   left: 0,
                 }}
               >
-                <Grid2 container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                <Grid2 container >
                   <Grid2 size={6}>
                     <Box
                       sx={{
@@ -145,8 +145,11 @@ export default function Home() {
                         color: 'white',
                         backgroundColor: 'rgba(25, 25, 112, 0.87)', // Overlay color with transparency
                         p: 4,
-                        height: '100%',
+                        height: '40rem',
                         borderRadius: '10px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
                       }}
                     >
                       <Typography variant="h2" component="h1" sx={{ mb: 2 }}>
@@ -155,6 +158,9 @@ export default function Home() {
                       <Typography>
                         Choose QRL Pixel for its easy QR code generation, customizability with colors and logos, and advanced tracking features. Monitor scans in real-time, including location and device data, all within an intuitive, user-friendly interface. Perfect for businesses and marketers seeking efficient, insightful QR code management.
                       </Typography>
+                      <Link href="/about" color="inherit" underline="hover">
+                        <Typography sx={{ mt: 2 }}>Learn more about QRL Pixel</Typography>
+                      </Link>
                     </Box>
                   </Grid2>
                 </Grid2>
